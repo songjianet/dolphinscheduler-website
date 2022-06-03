@@ -14,14 +14,14 @@
 <h2>System Structure</h2>
 <h3>System Architecture Diagram</h3>
 <p align="center">
-  <img src="/img/architecture-1.3.0.jpg" alt="System architecture diagram"  width="70%" />
+  <img src="../../../img/architecture-1.3.0.jpg" alt="System architecture diagram"  width="70%" />
   <p align="center">
         <em>System architecture diagram</em>
   </p>
 </p>
 <h3>Start Process Activity Diagram</h3>
 <p align="center">
-  <img src="/img/process-start-flow-1.3.0.png" alt="Start process activity diagram"  width="70%" />
+  <img src="../../../img/process-start-flow-1.3.0.png" alt="Start process activity diagram"  width="70%" />
   <p align="center">
         <em>Start process activity diagram</em>
   </p>
@@ -120,7 +120,7 @@ Interfaces include workflow creation, definition, query, modification, release, 
 <li>Flow diagram of implementation of Scheduler thread distributed lock in DolphinScheduler:</li>
 </ol>
  <p align="center">
-   <img src="/img/distributed_lock_procss.png" alt="Obtain distributed lock process"  width="50%" />
+   <img src="../../../img/distributed_lock_procss.png" alt="Obtain distributed lock process"  width="50%" />
  </p>
 <h4>Insufficient Thread Loop Waiting Problem</h4>
 <ul>
@@ -151,7 +151,7 @@ Among them, the Master monitors the directories of other Masters and Workers. If
 <li>Master fault tolerance：</li>
 </ul>
 <p align="center">
-   <img src="/img/failover-master.jpg" alt="failover-master"  width="50%" />
+   <img src="../../../img/failover-master.jpg" alt="failover-master"  width="50%" />
  </p>
 <p>Fault tolerance range: From the perspective of host, the fault tolerance range of Master includes: own host and node host that does not exist in the registry, and the entire process of fault tolerance will be locked;</p>
 <p>Fault-tolerant content: Master's fault-tolerant content includes: fault-tolerant process instances and task instances. Before fault-tolerant, compares the start time of the instance with the server start-up time, and skips fault-tolerance if after the server start time;</p>
@@ -160,7 +160,7 @@ Among them, the Master monitors the directories of other Masters and Workers. If
 <li>Worker fault tolerance：</li>
 </ul>
 <p align="center">
-   <img src="/img/failover-worker.jpg" alt="failover-worker"  width="50%" />
+   <img src="../../../img/failover-worker.jpg" alt="failover-worker"  width="50%" />
  </p>
 <p>Fault tolerance range: From the perspective of process instance, each Master is only responsible for fault tolerance of its own process instance; it will lock only when <code>handleDeadServer</code>;</p>
 <p>Fault-tolerant content: When sending the remove event of the Worker node, the Master only fault-tolerant task instances. Before fault-tolerant, compares the start time of the instance with the server start-up time, and skips fault-tolerance if after the server start time;</p>

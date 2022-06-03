@@ -18,7 +18,7 @@
 <h2>创建任务</h2>
 <ul>
 <li>点击项目管理-项目名称-工作流定义，点击&quot;创建工作流&quot;按钮，进入DAG编辑页面。</li>
-<li>工具栏中拖动 <img src="/img/tasks/icons/sql.png" width="25"/> 到画板中，选择需要连接的数据源，即可完成创建。</li>
+<li>工具栏中拖动 <img src="../../../../img/tasks/icons/sql.png" width="25"/> 到画板中，选择需要连接的数据源，即可完成创建。</li>
 </ul>
 <h2>任务参数</h2>
 <ul>
@@ -45,10 +45,10 @@
 <h2>任务样例</h2>
 <h3>在hive中创建临时表并写入数据</h3>
 <p>该样例向hive中创建临时表<code>tmp_hello_world</code>并写入一行数据。选择SQL类型为非查询，在创建临时表之前需要确保该表不存在，所以我们使用自定义参数，在每次运行时获取当天时间作为表名后缀，这样这个任务就可以每天运行。创建的表名格式为：<code>tmp_hello_world_{yyyyMMdd}</code>。</p>
-<p><img src="/img/tasks/demo/hive-sql.png" alt="hive-sql"></p>
+<p><img src="../../../../img/tasks/demo/hive-sql.png" alt="hive-sql"></p>
 <h3>运行该任务成功之后在hive中查询结果</h3>
 <p>登录集群使用<code>hive</code>命令或使用<code>beeline</code>、<code>JDBC</code>等方式连接<code>apache hive</code>进行查询，查询SQL为<code>select * from tmp_hello_world_{yyyyMMdd}</code>，请将<code>{yyyyMMdd}</code>替换为运行当天的日期，查询截图如下：</p>
-<p><img src="/img/tasks/demo/hive-result.png" alt="hive-sql"></p>
+<p><img src="../../../../img/tasks/demo/hive-result.png" alt="hive-sql"></p>
 <h2>注意事项</h2>
 <p>注意SQL类型的选择，如果是INSERT等操作需要选择非查询类型。</p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>联系我们</h3><h4>有问题需要反馈？请通过以下方式联系我们。</h4></div><div class="contact-container"><ul><li><a href="/zh-cn/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>邮件列表</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>文档</h4><ul><li><a href="/zh-cn/development/architecture-design.html"><p>概览</p></a></li><li><a href="/zh-cn/docs/latest/user_doc/guide/quick-start.html"><p>快速开始</p></a></li><li><a href="/zh-cn/development/development-environment-setup.html"><p>开发者指南</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>基金会</p></a></li><li><a href="http://www.apache.org/licenses/"><p>证书</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>事件</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>赞助</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>致谢</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>

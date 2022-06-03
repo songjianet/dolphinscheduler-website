@@ -14,7 +14,7 @@
 <p>如果您需要使用到Webex Teams进行告警，请在告警实例管理里创建告警实例，选择 WebexTeams 插件。
 你可以选择机器人私聊通知或聊天室通知。
 WebexTeams的配置样例如下:</p>
-<p><img src="/img/alert/enterprise-webexteams-plugin.png" alt="enterprise-webexteams-plugin"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-plugin.png" alt="enterprise-webexteams-plugin"></p>
 <h2>参数配置</h2>
 <ul>
 <li>botAccessToken
@@ -50,25 +50,25 @@ WebexTeams的配置样例如下:</p>
 </ul>
 <h2>创建一个机器人</h2>
 <p>访问<a href="https://developer.webex.com/docs/api/v1/rooms/create-a-room">官网My-Apps</a>来创建一个机器人，点击<code>Create a New APP</code> 然后选择 <code>Create a Bot</code>，填入机器人信息后获取<code>bot username</code> 和 <code>bot ID</code>以备以下步骤使用。</p>
-<p><img src="/img/alert/enterprise-webexteams-bot.png" alt="enterprise-webexteams-bot-info"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-bot.png" alt="enterprise-webexteams-bot-info"></p>
 <h2>创建一个房间</h2>
 <p>访问<a href="https://developer.webex.com/docs/api/v1/rooms/create-a-room">官网开发者APIs</a>来创建一个房间，填入房间名称后获取<code>id</code>(room ID) 和 <code>creatorId</code>以备以下步骤使用。</p>
-<p><img src="/img/alert/enterprise-webexteams-room.png" alt="enterprise-webexteams-room-info"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-room.png" alt="enterprise-webexteams-room-info"></p>
 <h3>邀请机器人到房间</h3>
 <p>通过机器人的Email(bot username)将机器人添加至房间。</p>
 <h2>发送私聊消息</h2>
 <p>通过这种方式，你可以通过<code>用户邮箱</code>或<code>用户</code>对一个用户私聊窗口发送告警，填入<code>用户</code> 或 <code>用户邮箱</code>(推荐) 和 <code>访问令牌</code>并选择<code>描述</code> <code>personEmail</code> 或 <code>personId</code>。
 <code>用户邮箱</code>是用户注册Email地址。
 <code>用户</code>我们可以从新建房间返回的<code>creatorId</code>中获取。</p>
-<p><img src="/img/alert/enterprise-webexteams-private-form.png" alt="enterprise-webexteams-private-message-form"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-private-form.png" alt="enterprise-webexteams-private-message-form"></p>
 <h3>私聊告警样例</h3>
-<p><img src="/img/alert/enterprise-webexteams-private-msg.png" alt="enterprise-webexteams-private-message-example"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-private-msg.png" alt="enterprise-webexteams-private-message-example"></p>
 <h2>发送群聊消息</h2>
 <p>通过这种方式，你可以通过<code>房间</code>向一个房间发送告警，填入<code>房间</code> 和 <code>访问令牌</code>并选择<code>描述</code> <code>roomId</code>。
 <code>房间</code>我们可以从新建房间API返回的<code>id</code>中获取。</p>
-<p><img src="/img/alert/enterprise-webexteams-group-form.png" alt="enterprise-webexteams-group-form"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-group-form.png" alt="enterprise-webexteams-group-form"></p>
 <h3>群聊告警消息样例</h3>
-<p><img src="/img/alert/enterprise-webexteams-room-msg.png" alt="enterprise-webexteams-room-message-example"></p>
+<p><img src="../../../../img/alert/enterprise-webexteams-room-msg.png" alt="enterprise-webexteams-room-message-example"></p>
 <p><a href="https://developer.webex.com/docs/bots">WebexTeams申请机器人文档</a>
 <a href="https://developer.webex.com/docs/api/v1/messages/create-a-message">WebexTeamsMessage开发文档</a></p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>联系我们</h3><h4>有问题需要反馈？请通过以下方式联系我们。</h4></div><div class="contact-container"><ul><li><a href="/zh-cn/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>邮件列表</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>文档</h4><ul><li><a href="/zh-cn/development/architecture-design.html"><p>概览</p></a></li><li><a href="/zh-cn/docs/latest/user_doc/guide/quick-start.html"><p>快速开始</p></a></li><li><a href="/zh-cn/development/development-environment-setup.html"><p>开发者指南</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>基金会</p></a></li><li><a href="http://www.apache.org/licenses/"><p>证书</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>事件</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>赞助</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>致谢</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>

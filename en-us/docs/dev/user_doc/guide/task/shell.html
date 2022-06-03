@@ -16,7 +16,7 @@
 <h2>Create Task</h2>
 <ul>
 <li>Click <code>Project -&gt; Management-Project -&gt; Name-Workflow Definition</code>, and click the <code>Create Workflow</code> button to enter the DAG editing page.</li>
-<li>Drag  from the toolbar <img src="/img/tasks/icons/shell.png" width="15"/> to the canvas.</li>
+<li>Drag  from the toolbar <img src="../../../../img/tasks/icons/shell.png" width="15"/> to the canvas.</li>
 </ul>
 <h2>Task Parameter</h2>
 <ul>
@@ -38,12 +38,12 @@
 <h3>Simply Print</h3>
 <p>We make an example simulate from a common task which runs by one command. The example is to print one line in the log file, as shown in the following figure:
 &quot;This is a demo of shell task&quot;.</p>
-<p><img src="/img/tasks/demo/shell.jpg" alt="demo-shell-simple"></p>
+<p><img src="../../../../img/tasks/demo/shell.jpg" alt="demo-shell-simple"></p>
 <h3>Custom Parameters</h3>
 <p>This example simulates a custom parameter task. We use parameters for reusing existing tasks as template or coping with the dynamic task. In this case,
 we declare a custom parameter named &quot;param_key&quot;, with the value &quot;param_val&quot;. Then we use <code>echo</code> to print the parameter &quot;${param_key}&quot; we just declared.
 After running this example, we would see &quot;param_val&quot; print in the log.</p>
-<p><img src="/img/tasks/demo/shell_custom_param.jpg" alt="demo-shell-custom-param"></p>
+<p><img src="../../../../img/tasks/demo/shell_custom_param.jpg" alt="demo-shell-custom-param"></p>
 <h2>Attention</h2>
 <p>The shell task type resolves whether the task log contains <code>application_xxx_xxx</code> to determine whether is the yarn task. If so, the corresponding application
 will be use to judge the running state of the current shell node. At this time, if stops the operation of the workflow, the corresponding <code>application_id</code>

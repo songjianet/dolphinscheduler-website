@@ -20,14 +20,14 @@
 <li>队列是在执行 spark、mapreduce 等程序，需要用到“队列”参数时使用的。</li>
 <li>管理员进入安全中心 -&gt; 队列管理页面，点击“创建队列”按钮，创建队列。</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-queue.png" alt="create-queue"></p>
+<p><img src="../../../img/new_ui/dev/security/create-queue.png" alt="create-queue"></p>
 <h2>添加租户</h2>
 <ul>
 <li>租户对应的是 Linux 的用户，用于 worker 提交作业所使用的用户。如果 linux 没有这个用户，则会导致任务运行失败。你可以通过修改 <code>worker.properties</code> 配置文件中参数 <code>worker.tenant.auto.create=true</code> 实现当 linux 用户不存在时自动创建该用户。<code>worker.tenant.auto.create=true</code> 参数会要求 worker 可以免密运行 <code>sudo</code> 命令</li>
 <li>租户编码：<strong>租户编码是 Linux上 的用户，唯一，不能重复</strong></li>
 <li>管理员进入安全中心-&gt;租户管理页面，点击“创建租户”按钮，创建租户。</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-tenant.png" alt="create-tenant"></p>
+<p><img src="../../../img/new_ui/dev/security/create-tenant.png" alt="create-tenant"></p>
 <h2>创建普通用户</h2>
 <ul>
 <li>
@@ -42,7 +42,7 @@
 <p>进入安全中心-&gt;用户管理页面，点击“创建用户”按钮，创建用户。</p>
 </li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-user.png" alt="create-user"></p>
+<p><img src="../../../img/new_ui/dev/security/create-user.png" alt="create-user"></p>
 <h3>编辑用户信息</h3>
 <ul>
 <li>管理员进入安全中心-&gt;用户管理页面，点击&quot;编辑&quot;按钮，编辑用户信息。</li>
@@ -58,7 +58,7 @@
 <li>告警组是在启动时设置的参数，在流程结束以后会将流程的状态和其他信息以邮件形式发送给告警组。</li>
 <li>管理员进入安全中心-&gt;告警组管理页面，点击“创建告警组”按钮，创建告警组。</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-alarmInstance.png" alt="create-alarmInstance"></p>
+<p><img src="../../../img/new_ui/dev/security/create-alarmInstance.png" alt="create-alarmInstance"></p>
 <h2>令牌管理</h2>
 <blockquote>
 <p>由于后端接口有登录检查，令牌管理提供了一种可以通过调用接口的方式对系统进行各种操作。</p>
@@ -66,7 +66,7 @@
 <ul>
 <li>管理员进入安全中心-&gt;令牌管理页面，点击“创建令牌”按钮，选择失效时间与用户，点击&quot;生成令牌&quot;按钮，点击&quot;提交&quot;按钮，则选择用户的token创建成功。</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-token.png" alt="create-token"></p>
+<p><img src="../../../img/new_ui/dev/security/create-token.png" alt="create-token"></p>
 <ul>
 <li>
 <p>普通用户登录后，点击用户名下拉框中的用户信息，进入令牌管理页面，选择失效时间，点击&quot;生成令牌&quot;按钮，点击&quot;提交&quot;按钮，则该用户创建 token 成功。</p>
@@ -117,11 +117,11 @@
 <ul>
 <li>管理员进入安全中心-&gt;用户管理页面，点击需授权用户的“授权”按钮，如下图所示：</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/user-authorize.png" alt="user-authorize"></p>
+<p><img src="../../../img/new_ui/dev/security/user-authorize.png" alt="user-authorize"></p>
 <ul>
 <li>选择项目，进行项目授权。</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/project-authorize.png" alt="project-authorize"></p>
+<p><img src="../../../img/new_ui/dev/security/project-authorize.png" alt="project-authorize"></p>
 <ul>
 <li>资源、数据源、UDF 函数授权同项目授权。</li>
 </ul>
@@ -160,14 +160,14 @@ worker.groups=default,test
 <ul>
 <li>环境配置等价于dolphinscheduler_env.sh文件内配置</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-environment.png" alt="create-environment"></p>
+<p><img src="../../../img/new_ui/dev/security/create-environment.png" alt="create-environment"></p>
 <blockquote>
 <p>使用环境</p>
 </blockquote>
 <ul>
 <li>在工作流定义中创建任务节点选择 worker 分组和 worker 分组对应的环境，任务执行时 worker 会先执行环境在执行任务.</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/use-environment.png" alt="use-environment"></p>
+<p><img src="../../../img/new_ui/dev/security/use-environment.png" alt="use-environment"></p>
 <h2>命名空间管理</h2>
 <blockquote>
 <p>创建/更新 k8s集群</p>
@@ -181,7 +181,7 @@ worker.groups=default,test
 <ul>
 <li>创建和授权后，在相关k8s任务选择命名空间时下拉可选，如果k8s集群名字是<code>ds_null_k8s</code>是测试模式，不会真正操作集群.</li>
 </ul>
-<p><img src="/img/new_ui/dev/security/create-namespace.png" alt="create-environment"></p>
+<p><img src="../../../img/new_ui/dev/security/create-namespace.png" alt="create-environment"></p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>联系我们</h3><h4>有问题需要反馈？请通过以下方式联系我们。</h4></div><div class="contact-container"><ul><li><a href="/zh-cn/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>邮件列表</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>文档</h4><ul><li><a href="/zh-cn/development/architecture-design.html"><p>概览</p></a></li><li><a href="/zh-cn/docs/latest/user_doc/guide/quick-start.html"><p>快速开始</p></a></li><li><a href="/zh-cn/development/development-environment-setup.html"><p>开发者指南</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>基金会</p></a></li><li><a href="http://www.apache.org/licenses/"><p>证书</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>事件</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>赞助</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>致谢</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>
   <script src="//cdn.jsdelivr.net/npm/react@15.6.2/dist/react-with-addons.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/react-dom@15.6.2/dist/react-dom.min.js"></script>

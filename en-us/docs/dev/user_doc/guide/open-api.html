@@ -18,11 +18,11 @@
 <ol>
 <li>Log in to the scheduling system, click &quot;Security&quot;, then click &quot;Token manage&quot; on the left, and click &quot;Create token&quot; to create a token.</li>
 </ol>
-<p><img src="/img/new_ui/dev/security/create-token.png" alt="create-token"></p>
+<p><img src="../../../img/new_ui/dev/security/create-token.png" alt="create-token"></p>
 <ol start="2">
 <li>Select the &quot;Expiration time&quot; (Token validity time), select &quot;User&quot; (choose the specified user to perform the API operation), click &quot;Generate token&quot;, copy the <code>Token</code> string, and click &quot;Submit&quot;.</li>
 </ol>
-<p><img src="/img/new_ui/dev/open-api/token_expiration.png" alt="token-expiration"></p>
+<p><img src="../../../img/new_ui/dev/open-api/token_expiration.png" alt="token-expiration"></p>
 <h3>Examples</h3>
 <h4>Query project list</h4>
 <ol>
@@ -31,7 +31,7 @@
 <blockquote>
 <p>Address：http://{API server ip}:12345/dolphinscheduler/doc.html?language=en_US&amp;lang=en</p>
 </blockquote>
-<p><img src="/img/new_ui/dev/open-api/api_doc.png" alt="api-doc"></p>
+<p><img src="../../../img/new_ui/dev/open-api/api_doc.png" alt="api-doc"></p>
 <ol start="2">
 <li>
 <p>select a test API, the API selected for this test is <code>queryAllProjectList</code></p>
@@ -45,20 +45,20 @@
 </code></pre>
 </li>
 </ol>
-<p><img src="/img/new_ui/dev/open-api/api_test.png" alt="api-test"></p>
+<p><img src="../../../img/new_ui/dev/open-api/api_test.png" alt="api-test"></p>
 <h4>Create a Project</h4>
 <p>This demonstrates how to use the calling api to create the corresponding project.</p>
 <p>By consulting the api documentation, configure the KEY as Accept and VALUE as the parameter of application/json in the headers of Postman.</p>
-<p><img src="/img/new_ui/dev/open-api/create_project01.png" alt="create-project01"></p>
+<p><img src="../../../img/new_ui/dev/open-api/create_project01.png" alt="create-project01"></p>
 <p>And then configure the required projectName and description parameters in Body.</p>
-<p><img src="/img/new_ui/dev/open-api/create_project02.png" alt="create-project02"></p>
+<p><img src="../../../img/new_ui/dev/open-api/create_project02.png" alt="create-project02"></p>
 <p>Check the post request result.</p>
-<p><img src="/img/new_ui/dev/open-api/create_project03.png" alt="create-project03"></p>
+<p><img src="../../../img/new_ui/dev/open-api/create_project03.png" alt="create-project03"></p>
 <p>The returned <code>msg</code> information is &quot;success&quot;, indicating that we have successfully created the project through API.</p>
 <p>If you are interested in the source code of creating a project, please continue to read the following：</p>
 <h3>Appendix： The Source Code of Creating a Project</h3>
-<p><img src="/img/new_ui/dev/open-api/api_source01.png" alt="api-source01"></p>
-<p><img src="/img/new_ui/dev/open-api/api_source02.png" alt="api-source02"></p>
+<p><img src="../../../img/new_ui/dev/open-api/api_source01.png" alt="api-source01"></p>
+<p><img src="../../../img/new_ui/dev/open-api/api_source02.png" alt="api-source02"></p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>About us</h3><h4>Do you need feedback? Please contact us through the following ways.</h4></div><div class="contact-container"><ul><li><a href="/en-us/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>Email List</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>Documentation</h4><ul><li><a href="/en-us/development/architecture-design.html"><p>Overview</p></a></li><li><a href="/en-us/docs/latest/user_doc/guide/quick-start.html"><p>Quick start</p></a></li><li><a href="/en-us/development/development-environment-setup.html"><p>Developer guide</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>Foundation</p></a></li><li><a href="http://www.apache.org/licenses/"><p>License</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>Events</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>Sponsorship</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>Thanks</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>
   <script src="//cdn.jsdelivr.net/npm/react@15.6.2/dist/react-with-addons.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/react-dom@15.6.2/dist/react-dom.min.js"></script>

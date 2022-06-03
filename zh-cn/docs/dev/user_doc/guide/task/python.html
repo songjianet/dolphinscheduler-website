@@ -17,7 +17,7 @@
 <h2>Create Task</h2>
 <ul>
 <li>点击项目管理-项目名称-工作流定义，点击&quot;创建工作流&quot;按钮，进入DAG编辑页面。</li>
-<li>工具栏中拖动 <img src="/img/tasks/icons/python.png" width="15"/> 到画板中，即可完成创建。</li>
+<li>工具栏中拖动 <img src="../../../../img/tasks/icons/python.png" width="15"/> 到画板中，即可完成创建。</li>
 </ul>
 <h2>Task Parameter</h2>
 <ul>
@@ -39,14 +39,14 @@
 <h3>Simply Print</h3>
 <p>该样例模拟了常见的简单任务，这些任务只需要简单的一两行命令就能运行起来。我们以打印一行日志为例，该任务仅会在日志文件中打印一行
 &quot;This is a demo of python task&quot;</p>
-<p><img src="/img/tasks/demo/python_ui_next.jpg" alt="demo-python-simple"></p>
+<p><img src="../../../../img/tasks/demo/python_ui_next.jpg" alt="demo-python-simple"></p>
 <pre><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;This is a demo of python task&quot;</span>)
 </code></pre>
 <h3>Custom Parameters</h3>
 <p>该样例模拟了自定义参数任务，为了更方便的复用已有的任务，或者面对动态的需求时，我们会使用变量保证脚本的复用性。本例中，我们先在自定义脚本
 中定义了参数 &quot;param_key&quot;，并将他的值设置为 &quot;param_val&quot;。接着在&quot;脚本&quot;中使用了 print 函数，将参数 &quot;param_key&quot; 打印了出来。当我们保存
 并运行任务后，在日志中会看到将参数 &quot;param_key&quot; 对应的值 &quot;param_val&quot; 打印出来。</p>
-<p><img src="/img/tasks/demo/python_custom_param_ui_next.jpg" alt="demo-python-custom-param"></p>
+<p><img src="../../../../img/tasks/demo/python_custom_param_ui_next.jpg" alt="demo-python-custom-param"></p>
 <pre><code class="language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;${param_key}&quot;</span>)
 </code></pre>
 <h2>Notice</h2>

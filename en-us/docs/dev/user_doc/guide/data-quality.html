@@ -89,7 +89,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 </li>
 </ul>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/null_check.png" alt="dataquality_null_check"></p>
+<p><img src="../../../img/tasks/demo/null_check.png" alt="dataquality_null_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -118,7 +118,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The timeliness check is used to check whether the data is processed within the expected time. The start time and end time can be specified to define the time range. If the amount of data within the time range does not reach the set threshold, the check task will be judged as fail</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/timeliness_check.png" alt="dataquality_timeliness_check"></p>
+<p><img src="../../../img/tasks/demo/timeliness_check.png" alt="dataquality_timeliness_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -150,7 +150,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The goal of field length verification is to check whether the length of the selected field meets the expectations. If there is data that does not meet the requirements, and the number of rows exceeds the threshold, the task will be judged to fail</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/field_length_check.png" alt="dataquality_length_check"></p>
+<p><img src="../../../img/tasks/demo/field_length_check.png" alt="dataquality_length_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -181,7 +181,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The goal of the uniqueness check is to check whether the field is duplicated. It is generally used to check whether the primary key is duplicated. If there is duplication and the threshold is reached, the check task will be judged to be failed.</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/uniqueness_check.png" alt="dataquality_uniqueness_check"></p>
+<p><img src="../../../img/tasks/demo/uniqueness_check.png" alt="dataquality_uniqueness_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -210,7 +210,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The goal of regular expression verification is to check whether the format of the value of a field meets the requirements, such as time format, email format, ID card format, etc. If there is data that does not meet the format and exceeds the threshold, the task will be judged as failed.</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/regexp_check.png" alt="dataquality_regex_check"></p>
+<p><img src="../../../img/tasks/demo/regexp_check.png" alt="dataquality_regex_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -240,7 +240,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The goal of enumeration value verification is to check whether the value of a field is within the range of enumeration values. If there is data that is not in the range of enumeration values ​​and exceeds the threshold, the task will be judged to fail</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/enumeration_check.png" alt="dataquality_enum_check"></p>
+<p><img src="../../../img/tasks/demo/enumeration_check.png" alt="dataquality_enum_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -270,7 +270,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>The goal of table row number verification is to check whether the number of rows in the table reaches the expected value. If the number of rows does not meet the standard, the task will be judged as failed.</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/table_count_check.png" alt="dataquality_count_check"></p>
+<p><img src="../../../img/tasks/demo/table_count_check.png" alt="dataquality_count_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -298,7 +298,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h2>Custom SQL Check</h2>
 <h3>Introduction</h3>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/custom_sql_check.png" alt="dataquality_custom_sql_check"></p>
+<p><img src="../../../img/tasks/demo/custom_sql_check.png" alt="dataquality_custom_sql_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -369,7 +369,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 </table>
 <p>If you compare the data in c1 and c21, the tables test1 and test2 are exactly the same. If you compare c2 and c22, the data in table test1 and table test2 are inconsistent.</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/multi_table_accuracy_check.png" alt="dataquality_multi_table_accuracy_check"></p>
+<p><img src="../../../img/tasks/demo/multi_table_accuracy_check.png" alt="dataquality_multi_table_accuracy_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -398,7 +398,7 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 <h3>Introduction</h3>
 <p>Two-table value comparison allows users to customize different SQL statistics for two tables and compare the corresponding values. For example, for the source table A, the total amount of a certain column is calculated, and for the target table, the total amount of a certain column is calculated. value sum2, compare sum1 and sum2 to determine the check result</p>
 <h3>UI Guide</h3>
-<p><img src="/img/tasks/demo/multi_table_comparison_check.png" alt="dataquality_multi_table_comparison_check"></p>
+<p><img src="../../../img/tasks/demo/multi_table_comparison_check.png" alt="dataquality_multi_table_comparison_check"></p>
 <ul>
 <li>Source data type: select MySQL, PostgreSQL, etc.</li>
 <li>Source data source: the corresponding data source under the source data type</li>
@@ -430,12 +430,12 @@ Currently only <code>MySQL</code>, <code>PostgreSQL</code> and <code>HIVE</code>
 </li>
 </ul>
 <h2>Task result view</h2>
-<p><img src="/img/tasks/demo/result.png" alt="dataquality_result"></p>
+<p><img src="../../../img/tasks/demo/result.png" alt="dataquality_result"></p>
 <h2>Rule View</h2>
 <h3>List of rules</h3>
-<p><img src="/img/tasks/demo/rule_list.png" alt="dataquality_rule_list"></p>
+<p><img src="../../../img/tasks/demo/rule_list.png" alt="dataquality_rule_list"></p>
 <h3>Rules Details</h3>
-<p><img src="/img/tasks/demo/rule_detail.png" alt="dataquality_rule_detail"></p>
+<p><img src="../../../img/tasks/demo/rule_detail.png" alt="dataquality_rule_detail"></p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>About us</h3><h4>Do you need feedback? Please contact us through the following ways.</h4></div><div class="contact-container"><ul><li><a href="/en-us/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>Email List</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>Documentation</h4><ul><li><a href="/en-us/development/architecture-design.html"><p>Overview</p></a></li><li><a href="/en-us/docs/latest/user_doc/guide/quick-start.html"><p>Quick start</p></a></li><li><a href="/en-us/development/development-environment-setup.html"><p>Developer guide</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>Foundation</p></a></li><li><a href="http://www.apache.org/licenses/"><p>License</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>Events</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>Sponsorship</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>Thanks</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>
   <script src="//cdn.jsdelivr.net/npm/react@15.6.2/dist/react-with-addons.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/react-dom@15.6.2/dist/react-dom.min.js"></script>

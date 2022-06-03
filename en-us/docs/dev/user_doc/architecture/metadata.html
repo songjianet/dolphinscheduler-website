@@ -121,14 +121,14 @@
 <hr>
 <h2>E-R Diagram</h2>
 <h3>User Queue DataSource</h3>
-<p><img src="/img/metadata-erd/user-queue-datasource.png" alt="image.png"></p>
+<p><img src="../../../img/metadata-erd/user-queue-datasource.png" alt="image.png"></p>
 <ul>
 <li>One tenant can own Multiple users.</li>
 <li>The queue field in the t_ds_user table stores the queue_name information in the t_ds_queue table, t_ds_tenant stores queue information using queue_id column. During the execution of the process definition, the user queue has the highest priority. If the user queue is null, use the tenant queue.</li>
 <li>The user_id field in the t_ds_datasource table shows the user who create the data source. The user_id in t_ds_relation_datasource_user shows the user who has permission to the data source.</li>
 </ul>
 <h3>Project Resource Alert</h3>
-<p><img src="/img/metadata-erd/project-resource-alert.png" alt="image.png"></p>
+<p><img src="../../../img/metadata-erd/project-resource-alert.png" alt="image.png"></p>
 <ul>
 <li>User can have multiple projects, user project authorization completes the relationship binding using project_id and user_id in t_ds_relation_project_user table.</li>
 <li>The user_id in the t_ds_projcet table represents the user who create the project, and the user_id in the t_ds_relation_project_user table represents users who have permission to the project.</li>
@@ -136,7 +136,7 @@
 <li>The user_id in the t_ds_udfs table represents the user who create the UDF, and the user_id in the t_ds_relation_udfs_user table represents a user who has permission to the UDF.</li>
 </ul>
 <h3>Command Process Task</h3>
-<p><img src="/img/metadata-erd/command.png" alt="image.png"><br /><img src="/img/metadata-erd/process-task.png" alt="image.png"></p>
+<p><img src="../../../img/metadata-erd/command.png" alt="image.png"><br /><img src="../../../img/metadata-erd/process-task.png" alt="image.png"></p>
 <ul>
 <li>A project has multiple process definitions, a process definition can generate multiple process instances, and a process instance can generate multiple task instances.</li>
 <li>The t_ds_schedulers table stores the specified time schedule information for process definition.</li>

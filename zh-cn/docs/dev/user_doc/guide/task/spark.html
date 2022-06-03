@@ -21,7 +21,7 @@
 <p>点击项目管理 -&gt; 项目名称 -&gt; 工作流定义，点击”创建工作流”按钮，进入 DAG 编辑页面：</p>
 </li>
 <li>
-<p>拖动工具栏的 <img src="/img/tasks/icons/spark.png" width="15"/> 任务节点到画板中。</p>
+<p>拖动工具栏的 <img src="../../../../img/tasks/icons/spark.png" width="15"/> 任务节点到画板中。</p>
 </li>
 </ul>
 <h2>任务参数</h2>
@@ -60,18 +60,18 @@
 <p>本案例为大数据生态中常见的入门案例，常应用于 MapReduce、Flink、Spark 等计算框架。主要为统计输入的文本中，相同的单词的数量有多少。</p>
 <h5>在 DolphinScheduler 中配置 Spark 环境</h5>
 <p>若生产环境中要是使用到 Spark 任务类型，则需要先配置好所需的环境。配置文件如下：<code>bin/env/dolphinscheduler_env.sh</code>。</p>
-<p><img src="/img/tasks/demo/spark_task01.png" alt="spark_configure"></p>
+<p><img src="../../../../img/tasks/demo/spark_task01.png" alt="spark_configure"></p>
 <h5>上传主程序包</h5>
 <p>在使用 Spark 任务节点时，需要利用资源中心上传执行程序的 jar 包，可参考<a href="../resource/configuration.md">资源中心</a>。</p>
 <p>当配置完成资源中心之后，直接使用拖拽的方式，即可上传所需目标文件。</p>
-<p><img src="/img/tasks/demo/upload_jar.png" alt="resource_upload"></p>
+<p><img src="../../../../img/tasks/demo/upload_jar.png" alt="resource_upload"></p>
 <h5>配置 Spark 节点</h5>
 <p>根据上述参数说明，配置所需的内容即可。</p>
-<p><img src="/img/tasks/demo/spark_task02.png" alt="demo-spark-simple"></p>
+<p><img src="../../../../img/tasks/demo/spark_task02.png" alt="demo-spark-simple"></p>
 <h3>spark sql</h3>
 <h4>执行 DDL 和 DML 语句</h4>
 <p>本案例为创建一个视图表 terms 并写入三行数据和一个格式为 parquet 的表 wc 并判断该表是否存在。程序类型为 SQL。将视图表 terms 的数据插入到格式为 parquet 的表 wc。</p>
-<p><img src="/img/tasks/demo/spark_sql.png" alt="spark_sql"></p>
+<p><img src="../../../../img/tasks/demo/spark_sql.png" alt="spark_sql"></p>
 <h2>注意事项：</h2>
 <p>注意：</p>
 <p>JAVA 和 Scala 只用于标识，使用 Spark 任务时没有区别。如果应用程序是由 Python 开发的，那么可以忽略表单中的参数<strong>Main Class</strong>。参数<strong>SQL脚本</strong>仅适用于 SQL 类型，在 JAVA、Scala 和 Python 中可以忽略。</p>

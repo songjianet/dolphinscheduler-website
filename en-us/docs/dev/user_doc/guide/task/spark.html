@@ -18,7 +18,7 @@
 <h2>Create Task</h2>
 <ul>
 <li>Click <code>Project -&gt; Management-Project -&gt; Name-Workflow Definition</code>, and click the <code>Create Workflow</code> button to enter the DAG editing page.</li>
-<li>Drag from the toolbar <img src="/img/tasks/icons/spark.png" width="15"/> to the canvas.</li>
+<li>Drag from the toolbar <img src="../../../../img/tasks/icons/spark.png" width="15"/> to the canvas.</li>
 </ul>
 <h2>Task Parameter</h2>
 <ul>
@@ -56,18 +56,18 @@
 <p>This is a common introductory case in the big data ecosystem, which often apply to computational frameworks such as MapReduce, Flink and Spark. The main purpose is to count the number of identical words in the input text. (Flink's releases attach this example job)</p>
 <h5>Configure the Spark Environment in DolphinScheduler</h5>
 <p>If you are using the Spark task type in a production environment, it is necessary to configure the required environment first. The following is the configuration file: <code>bin/env/dolphinscheduler_env.sh</code>.</p>
-<p><img src="/img/tasks/demo/spark_task01.png" alt="spark_configure"></p>
+<p><img src="../../../../img/tasks/demo/spark_task01.png" alt="spark_configure"></p>
 <h5>Upload the Main Package</h5>
 <p>When using the Spark task node, you need to upload the jar package to the Resource Centre for the execution, refer to the <a href="../resource/configuration.md">resource center</a>.</p>
 <p>After finish the Resource Centre configuration, upload the required target files directly by dragging and dropping.</p>
-<p><img src="/img/tasks/demo/upload_jar.png" alt="resource_upload"></p>
+<p><img src="../../../../img/tasks/demo/upload_jar.png" alt="resource_upload"></p>
 <h5>Configure Spark Nodes</h5>
 <p>Configure the required content according to the parameter descriptions above.</p>
-<p><img src="/img/tasks/demo/spark_task02.png" alt="demo-spark-simple"></p>
+<p><img src="../../../../img/tasks/demo/spark_task02.png" alt="demo-spark-simple"></p>
 <h3>spark sql</h3>
 <h4>Execute DDL and DML statements</h4>
 <p>This case is to create a view table terms and write three rows of data and a table wc in parquet format and determine whether the table exists. The program type is SQL. Insert the data of the view table terms into the table wc in parquet format.</p>
-<p><img src="/img/tasks/demo/spark_sql.png" alt="spark_sql"></p>
+<p><img src="../../../../img/tasks/demo/spark_sql.png" alt="spark_sql"></p>
 <h2>Notice</h2>
 <p>JAVA and Scala are only used for identification, and there is no difference when you use the Spark task. If your application is developed by Python, you could just ignore the parameter <strong>Main Class</strong> in the form. Parameter <strong>SQL scripts</strong> is only for SQL type and could be ignored in JAVA, Scala and Python.</p>
 <p>SQL does not currently support cluster mode.</p>

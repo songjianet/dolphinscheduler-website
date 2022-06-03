@@ -47,7 +47,7 @@
 <h2>创建任务</h2>
 <ul>
 <li>点击项目管理-项目名称-工作流定义，点击“创建工作流”按钮，进入 DAG 编辑页面；</li>
-<li>拖动工具栏的 <img src="/img/tasks/icons/mlflow.png" width="15"/> 任务节点到画板中。</li>
+<li>拖动工具栏的 <img src="../../../../img/tasks/icons/mlflow.png" width="15"/> 任务节点到画板中。</li>
 </ul>
 <h2>任务样例</h2>
 <p>首先介绍一些DS通用参数</p>
@@ -66,7 +66,7 @@
 </ul>
 <h3>MLflow Projects</h3>
 <h4>BasicAlgorithm</h4>
-<p><img src="/img/tasks/demo/mlflow-basic-algorithm.png" alt="mlflow-conda-env"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-basic-algorithm.png" alt="mlflow-conda-env"></p>
 <p><strong>任务参数</strong></p>
 <ul>
 <li><strong>mlflow server tracking uri</strong> ：MLflow server 的连接, 默认 <a href="http://localhost:5000">http://localhost:5000</a>。</li>
@@ -89,7 +89,7 @@
 <li><strong>参数搜索空间</strong> : 运行对应算法的参数搜索空间, 可为空。如针对lightgbm 的 <code>max_depth=[5, 10];n_estimators=[100, 200]</code> 则会进行对应搜索。约定传入后会以;切分各个参数，等号前的名字作为参数名，等号后的名字将以python eval执行得到对应的参数值</li>
 </ul>
 <h4>AutoML</h4>
-<p><img src="/img/tasks/demo/mlflow-automl.png" alt="mlflow-automl"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-automl.png" alt="mlflow-automl"></p>
 <p><strong>任务参数</strong></p>
 <ul>
 <li><strong>mlflow server tracking uri</strong> ：MLflow server 的连接, 默认 <a href="http://localhost:5000">http://localhost:5000</a>。</li>
@@ -110,7 +110,7 @@
 , <a href="https://github.com/microsoft/FLAML">flaml</a></li>
 </ul>
 <h4>Custom projects</h4>
-<p><img src="/img/tasks/demo/mlflow-custom-project-template.png" alt="mlflow-custom-project-template.png"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-custom-project-template.png" alt="mlflow-custom-project-template.png"></p>
 <p><strong>任务参数</strong></p>
 <ul>
 <li><strong>mlflow server tracking uri</strong> ：MLflow server 的连接, 默认 <a href="http://localhost:5000">http://localhost:5000</a>。</li>
@@ -121,10 +121,10 @@
 </ul>
 <p>现在你可以使用这个功能来运行github上所有的MLflow Projects (如 <a href="https://github.com/mlflow/mlflow/tree/master/examples">MLflow examples</a> )了。你也可以创建自己的机器学习库，用来复用你的研究成果，以后你就可以使用DolphinScheduler来一键操作使用你的算法库。</p>
 <p>实际运行界面如下</p>
-<p><img src="/img/tasks/demo/mlflow-custom-project.png" alt="mlflow-custom-project.png"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-custom-project.png" alt="mlflow-custom-project.png"></p>
 <h3>MLflow Models</h3>
 <h4>MLFLOW</h4>
-<p><img src="/img/tasks/demo/mlflow-models-mlflow.png" alt="mlflow-models-mlflow"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-models-mlflow.png" alt="mlflow-models-mlflow"></p>
 <p><strong>任务参数</strong></p>
 <ul>
 <li><strong>mlflow server tracking uri</strong> ：MLflow server 的连接, 默认 <a href="http://localhost:5000">http://localhost:5000</a>。</li>
@@ -132,7 +132,7 @@
 <li><strong>部署端口</strong> ：部署服务时的端口。</li>
 </ul>
 <h4>Docker</h4>
-<p><img src="/img/tasks/demo/mlflow-models-docker.png" alt="mlflow-models-docker"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-models-docker.png" alt="mlflow-models-docker"></p>
 <ul>
 <li><strong>mlflow server tracking uri</strong> ：MLflow server 的连接, 默认 <a href="http://localhost:5000">http://localhost:5000</a>。</li>
 <li><strong>部署模型的uri</strong> ：mlflow 服务里面模型对应的uri, 支持 <code>models:/&lt;model_name&gt;/suffix</code> 格式 和 <code>runs:/</code> 格式。</li>
@@ -142,9 +142,9 @@
 <h3>conda 环境配置</h3>
 <p>你需要进入admin账户配置一个conda环境变量（请提前<a href="https://docs.continuum.io/anaconda/install/">安装anaconda</a>
 或者<a href="https://docs.conda.io/en/latest/miniconda.html#installing">安装miniconda</a> )</p>
-<p><img src="/img/tasks/demo/mlflow-conda-env.png" alt="mlflow-conda-env"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-conda-env.png" alt="mlflow-conda-env"></p>
 <p>后续注意配置任务时，环境选择上面创建的conda环境，否则程序会找不到conda环境</p>
-<p><img src="/img/tasks/demo/mlflow-set-conda-env.png" alt="mlflow-set-conda-env"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-set-conda-env.png" alt="mlflow-set-conda-env"></p>
 <h3>mlflow service 启动</h3>
 <p>确保你已经安装mlflow，可以使用<code>pip install mlflow</code>进行安装</p>
 <p>在你想保存实验和模型的地方建立一个文件夹，然后启动 mlflow service</p>
@@ -154,7 +154,7 @@ mlflow server -h 0.0.0.0 -p 5000 --serve-artifacts --backend-store-uri sqlite://
 </code></pre>
 <p>运行后会启动一个mlflow服务</p>
 <p>可以通过访问 mlflow service (<code>http://localhost:5000</code>) 页面查看实验与模型</p>
-<p><img src="/img/tasks/demo/mlflow-server.png" alt="mlflow-server"></p>
+<p><img src="../../../../img/tasks/demo/mlflow-server.png" alt="mlflow-server"></p>
 </div></section><footer class="footer-container"><div class="footer-body"><div><h3>联系我们</h3><h4>有问题需要反馈？请通过以下方式联系我们。</h4></div><div class="contact-container"><ul><li><a href="/zh-cn/community/development/subscribe.html"><img class="img-base" src="/img/emailgray.png"/><img class="img-change" src="/img/emailblue.png"/><p>邮件列表</p></a></li><li><a href="https://twitter.com/dolphinschedule"><img class="img-base" src="/img/twittergray.png"/><img class="img-change" src="/img/twitterblue.png"/><p>Twitter</p></a></li><li><a href="https://stackoverflow.com/questions/tagged/apache-dolphinscheduler"><img class="img-base" src="/img/stackoverflow.png"/><img class="img-change" src="/img/stackoverflow-selected.png"/><p>Stack Overflow</p></a></li><li><a href="https://join.slack.com/t/asf-dolphinscheduler/shared_invite/zt-omtdhuio-_JISsxYhiVsltmC5h38yfw"><img class="img-base" src="/img/slack.png"/><img class="img-change" src="/img/slack-selected.png"/><p>Slack</p></a></li></ul></div><div class="cols-container"><div class="docu-container"><h4>文档</h4><ul><li><a href="/zh-cn/development/architecture-design.html"><p>概览</p></a></li><li><a href="/zh-cn/docs/latest/user_doc/guide/quick-start.html"><p>快速开始</p></a></li><li><a href="/zh-cn/development/development-environment-setup.html"><p>开发者指南</p></a></li></ul></div><div></div><div class="asf-container"><h4>ASF</h4><ul><li><a href="http://www.apache.org"><p>基金会</p></a></li><li><a href="http://www.apache.org/licenses/"><p>证书</p></a></li><li><a href="http://www.apache.org/events/current-event"><p>事件</p></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html"><p>赞助</p></a></li><li><a href="http://www.apache.org/foundation/thanks.html"><p>致谢</p></a></li></ul></div></div><div class="copyright"><span>Copyright © 2019-2021 The Apache Software Foundation. Apache DolphinScheduler, DolphinScheduler, and its feather logo are trademarks of The Apache Software Foundation.</span></div></div></footer></div></div>
   <script src="//cdn.jsdelivr.net/npm/react@15.6.2/dist/react-with-addons.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/react-dom@15.6.2/dist/react-dom.min.js"></script>
